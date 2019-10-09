@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'sandbox';
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
 if (process.env.NODE_ENV === 'sandbox') {
   require('dotenv').config({ path: '.env.sandbox' });
