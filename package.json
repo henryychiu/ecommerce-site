@@ -28,7 +28,6 @@
     "firebase": "4.2.0",
     "history": "4.7.2",
     "moment": "2.18.1",
-    "node": "^12.11.1",
     "node-sass": "^4.12.0",
     "normalize.css": "7.0.0",
     "numeral": "2.0.6",
@@ -59,5 +58,8 @@
     "jest": "20.0.4",
     "react-test-renderer": "16.0.0",
     "webpack-dev-server": "2.5.1"
+  },
+  "engines": {
+    "node": "12.9.1"
   }
 }
