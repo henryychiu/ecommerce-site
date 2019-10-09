@@ -1,0 +1,45 @@
+.summary {
+  background: black;
+  flex: 1;
+  margin: $m-size 0 0 $m-size;
+  width: 30rem;
+  max-height: 32rem;
+}
+
+.summary__header {
+  color: white;
+  font-weight: 600;
+  padding: $s-size;
+  padding-right: 1.8rem;
+}
+
+.summary__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__text {
+  color: white;
+  font-weight: 300;
+  margin: $s-size;
+  margin-right: 1.8rem;
+  margin-top: 0;
+}
+
+.summary__message {
+  color: $dark-grey;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: $m-size;
+  margin-top: 0;
+}
+
+.summary__select {
+  background: $dark-grey;
+  border: 0;
+  color: white;
+  direction: rtl;
+  font-weight: 300;
+  margin: $s-size;
+  margin-top: 0;
+}

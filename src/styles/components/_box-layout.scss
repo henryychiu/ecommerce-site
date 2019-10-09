@@ -1,0 +1,36 @@
+.box-layout {
+  align-items: center;
+  background: url('/images/yearbook_bg.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+	position: fixed;
+  top: 1;
+  left: 0;
+}
+
+.box-layout__title {
+  color: $off-white;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  line-height: 1;
+  padding: $l-size;
+}
+
+.box-layout__button {
+  background: $dark-grey;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
