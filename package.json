@@ -60,6 +60,6 @@
     "webpack-dev-server": "2.5.1"
   },
   "engines": {
-    "node": "12.9.1"
+    "node": "11.14.0"
   }
 }
