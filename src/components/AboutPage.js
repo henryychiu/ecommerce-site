@@ -11,8 +11,9 @@ const AboutPage = () => {
       </div>
       <div className="content-container">
         <p>          
-          The sale of these brand new yearbooks will support both James Logan's yearbook and CyberPatriot programs.  Cyberpatriots are a team of Logan students that compete against over 6000 teams worldwide for honors in CyberSecurity. 
-          You will be supporting Logan students and gaining a beautiful time capsule by purchasing one of our yearbooks.
+          The sale of these yearbooks will help fund both James Logan's yearbook and CyberPatriot programs.
+          Cyberpatriot is a team of James Logan students that competes against over 6000 other teams worldwide for honors in CyberSecurity. 
+          By purchasing one of our yearbooks, you will be supporting James Logan students and gaining a beautiful time capsule.
         </p>
         <p>
           If you have any questions or concerns, email Charmaine Banther, CyberPatriot Teacher:
