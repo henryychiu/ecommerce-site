@@ -26,7 +26,7 @@ class CheckoutSummary extends React.Component {
   };
   onShippingChange = (e) => {
     e.target.value == 'pickup' && this.setState({ shippingMethod: 'pickup', total: this.props.itemsSubtotal - this.props.itemsDiscount })
-    e.target.value == 'ship' && this.setState({ shippingMethod: 'ship', total: this.props.itemsSubtotal - this.props.itemsDiscount + this.state.shipping })
+    e.target.value == 'ship' && this.setState({ shippingMethod: 'ship', total: this.props.itemsSubtotal - this.props.itemsDiscount + this.state.shippingPrice })
   }
   onSuccess = (payment) => {
     console.log('Successful payment!', payment);
