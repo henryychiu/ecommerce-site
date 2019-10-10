@@ -1,0 +1,1 @@
+https://jlhs-vintage-yearbooks.herokuapp.com/
