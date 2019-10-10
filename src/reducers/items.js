@@ -9,6 +9,8 @@ export default (state = itemsReducerDefaultState, action) => {
       ];
     case 'REMOVE_ITEM':
       return state.filter(({ id }) => (id !== action.id));
+    case 'CLEAR_ITEMS':
+      return [];
     default:
       return state;
   }

@@ -16,6 +16,10 @@ export const removeItem = ({ id } = {}) => ({
   id
 });
 
+export const clearItems = () => ({
+  type: 'CLEAR_ITEMS'
+})
+
 export const startAddOrder = (orderData = {}) => {
   return () => {
     const {

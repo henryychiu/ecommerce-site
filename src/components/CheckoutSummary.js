@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import numeral from 'numeral';
+import PaypalButton from 'react-paypal-express-checkout';
+import Modal from 'react-modal';
 import selectItemsSubtotal from '../selectors/items-subtotal';
 import selectItemsDiscount from '../selectors/items-discount';
-import { startAddOrder } from '../actions/items';
-import PaypalButton from './PaypalButton';
+import { startAddOrder, clearItems } from '../actions/items';
 
 const CLIENT = {
   sandbox: process.env.PAYPAL_CLIENT_ID_SANDBOX,
@@ -21,8 +22,12 @@ class CheckoutSummary extends React.Component {
     this.state = {
       shippingMethod: 'pickup',
       shippingPrice: 1435,
-      total: props.itemsSubtotal - props.itemsDiscount
+      total: props.itemsSubtotal - props.itemsDiscount,
+      modalIsOpen: false
     };
+  };
+  closeModal = () => {
+    this.setState({ modalIsOpen: false });
   };
   onShippingChange = (e) => {
     e.target.value == 'pickup' && this.setState({ shippingMethod: 'pickup', total: this.props.itemsSubtotal - this.props.itemsDiscount })
@@ -36,6 +41,8 @@ class CheckoutSummary extends React.Component {
       total: this.state.total,
       orderedAt: new Date().toLocaleString()
     });
+    this.props.clearItems();
+    this.setState({ total: 0, modalIsOpen: true });
   }
   onError = (error) =>
     console.log('Erroneous payment OR failed to load script!', error);
@@ -80,17 +87,33 @@ class CheckoutSummary extends React.Component {
             <PaypalButton
               client={CLIENT}
               env={ENV}
-              commit={true}
               currency={'USD'}
               total={this.state.total / 100}
               onSuccess={this.onSuccess}
               onError={this.onError}
               onCancel={this.onCancel}
+              style={{
+                size: 'medium',
+                color: 'gold',
+                shape: 'rect',
+                label: 'paypal'
+              }}
+              shipping={this.state.shippingMethod === 'pickup' ? 1 : 2}
             />
             <div />
           </div>
         </div>
         <p className="summary__message">*Pickup Location: James Logan High School, Room 67</p>
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          contentLabel="Order"
+          closeTimeoutMS={200}
+          className="modal"
+          ariaHideApp={false}
+        >
+          <p className="modal__title">Your order has been placed.</p>
+          <button className="modal__button" onClick={this.closeModal}>OKAY</button>
+        </Modal>
       </div>
     );
   }
@@ -103,7 +126,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  startAddOrder: (orderData) => dispatch(startAddOrder(orderData))
+  startAddOrder: (orderData) => dispatch(startAddOrder(orderData)),
+  clearItems: () => dispatch(clearItems())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CheckoutSummary);
