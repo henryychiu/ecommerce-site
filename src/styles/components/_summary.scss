@@ -1,9 +1,20 @@
+.checkout-container {
+  display: flex;
+  @media (max-width: $desktop-breakpoint - .01rem) {
+    flex-direction: column;
+  }
+}
+
 .summary {
   background: black;
   flex: 1;
   margin: $m-size 0 0 $m-size;
-  width: 30rem;
+  max-width: 30rem;
   max-height: 32rem;
+  @media (max-width: $desktop-breakpoint - .01rem) {
+    flex-direction: column;
+    margin-left: 0; 
+  }
 }
 
 .summary__header {

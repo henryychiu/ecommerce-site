@@ -43,7 +43,9 @@ class ProductPage extends React.Component {
               })
             }
           </div>
-          <img id="expandedImage" className="product__image" src={this.props.product.images[0]} />
+          <div className="product__image-container">
+            <img id="expandedImage" className="product__image" src={this.props.product.images[0]} />          
+          </div>
           <div className="product-body">
             <p className="product-title">{this.props.product.name}</p>
             <p className="product-subtitle">{numeral(this.props.product.price / 100).format('$0,0.00')}</p>

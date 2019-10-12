@@ -6,7 +6,7 @@ const CheckoutPage = (props) => {
   document.title = 'Checkout';
   return (
     <div className="content-container">
-      <div style={{display: 'flex'}}>
+      <div className="checkout-container">
         <CartList />
         <CheckoutSummary />
       </div>
