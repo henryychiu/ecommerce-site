@@ -15,6 +15,11 @@ const productsReducerState = [
     images: ['/images/86yearbook.jpg', '/images/86yearbook2.jpg', '/images/86yearbook3.jpg']
   },
   {
+    name: '1990 Yearbook',
+    price: 2000,
+    images: ['/images/90yearbook.jpg', '/images/90yearbook2.jpg', '/images/90yearbook3.jpg']
+  },
+  {
     name: '1991 Yearbook',
     price: 2000,
     images: ['/images/91yearbook.jpg', '/images/91yearbook2.jpg', '/images/91yearbook3.jpg']
@@ -45,6 +50,21 @@ const productsReducerState = [
     images: ['/images/96yearbook.jpg', '/images/96yearbook2.jpg', '/images/96yearbook3.jpg']
   },
   {
+    name: '1997 Yearbook',
+    price: 2000,
+    images: ['/images/97yearbook.jpg', '/images/97yearbook2.jpg', '/images/97yearbook3.jpg']
+  },
+  {
+    name: '1998 Yearbook',
+    price: 2000,
+    images: ['/images/98yearbook.jpg', '/images/98yearbook2.jpg', '/images/98yearbook3.jpg']
+  },
+  {
+    name: '1999 Yearbook',
+    price: 2000,
+    images: ['/images/99yearbook.jpg', '/images/99yearbook2.jpg', '/images/99yearbook3.jpg']
+  },
+  {
     name: '2003 Yearbook',
     price: 2000,
     images: ['/images/03yearbook.jpg', '/images/03yearbook2.jpg', '/images/03yearbook3.jpg']
@@ -55,9 +75,9 @@ const productsReducerState = [
     images: ['/images/04yearbook.jpg', '/images/04yearbook2.jpg', '/images/04yearbook3.jpg']
   },
   {
-    name: '2015 Yearbook',
+    name: '2005 Yearbook',
     price: 2000,
-    images: ['/images/15yearbook.jpg', '/images/15yearbook2.jpg', '/images/15yearbook3.jpg']
+    images: ['/images/05yearbook.jpg', '/images/05yearbook2.jpg', '/images/05yearbook3.jpg']
   },
   {
     name: '2016 Yearbook',

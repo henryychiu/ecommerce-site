@@ -11,7 +11,6 @@ export const ProductList = (props) => (
           return <ProductListItem key={props.products.indexOf(product)} {...product} />;
         })
       }
-      <div className="list-item"/>
     </div>
   </div>
 );
