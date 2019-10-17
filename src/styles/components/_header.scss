@@ -18,6 +18,9 @@
   line-height: 1;
   margin: 0;
   text-decoration: none;
+  @media (max-width: $desktop-breakpoint - .01rem) {
+    display: none;
+  }
 }
 
 .header__links {

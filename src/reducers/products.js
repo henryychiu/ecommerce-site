@@ -90,6 +90,11 @@ const productsReducerState = [
     images: ['/images/05yearbook.jpg', '/images/05yearbook2.jpg', '/images/05yearbook3.jpg']
   },
   {
+    name: '2010 Yearbook',
+    price: 2000,
+    images: ['/images/10yearbook.jpg', '/images/10yearbook2.jpg', '/images/10yearbook3.jpg']
+  },
+  {
     name: '2016 Yearbook',
     price: 2000,
     images: ['/images/16yearbook.jpg', '/images/16yearbook2.jpg', '/images/16yearbook3.jpg']

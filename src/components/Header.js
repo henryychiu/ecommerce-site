@@ -7,11 +7,9 @@ export const Header = () => {
     <header className="header">
       <div className="content-container">
         <div className="header__content">
-          <div className="show-for-desktop">
-            <Link className="header__title" to="/">
-              JLHS VINTAGE YEARBOOKS
-            </Link>
-          </div>
+          <Link className="header__title" to="/">
+            JLHS VINTAGE YEARBOOKS
+          </Link>
           <div className="header__links">
             <NavLink to="/shop" title="SHOP" className="header__link" activeClassName="header__link header__link--active">
               SHOP
