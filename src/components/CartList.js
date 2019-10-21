@@ -4,7 +4,7 @@ import CartListItem from './CartListItem';
 
 export const CartList = (props) => (
   <div className="cartlist">
-    <p className="list-header">Cart ({props.items.length})</p>
+    <p className="list-header__title">Cart ({props.items.length})</p>
     <div className="cartlist">
       {
         props.items.length === 0 ? (

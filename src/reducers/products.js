@@ -90,9 +90,39 @@ const productsReducerState = [
     images: ['/images/05yearbook.jpg', '/images/05yearbook2.jpg', '/images/05yearbook3.jpg']
   },
   {
+    name: '2006 Yearbook',
+    price: 2000,
+    images: ['/images/06yearbook.jpg', '/images/06yearbook2.jpg', '/images/06yearbook3.jpg']
+  },
+  {
+    name: '2007 Yearbook',
+    price: 2000,
+    images: ['/images/07yearbook.jpg', '/images/07yearbook2.jpg', '/images/07yearbook3.jpg']
+  },
+  {
+    name: '2008 Yearbook',
+    price: 2000,
+    images: ['/images/08yearbook.jpg', '/images/08yearbook2.jpg', '/images/08yearbook3.jpg']
+  },
+  {
     name: '2010 Yearbook',
     price: 2000,
     images: ['/images/10yearbook.jpg', '/images/10yearbook2.jpg', '/images/10yearbook3.jpg']
+  },
+  {
+    name: '2011 Yearbook',
+    price: 2000,
+    images: ['/images/11yearbook.jpg', '/images/11yearbook2.jpg', '/images/11yearbook3.jpg']
+  },
+  {
+    name: '2013 Yearbook',
+    price: 2000,
+    images: ['/images/13yearbook.jpg', '/images/13yearbook2.jpg', '/images/13yearbook3.jpg']
+  },
+  {
+    name: '2015 Yearbook',
+    price: 2000,
+    images: ['/images/15yearbook.jpg', '/images/15yearbook2.jpg', '/images/15yearbook3.jpg']
   },
   {
     name: '2016 Yearbook',

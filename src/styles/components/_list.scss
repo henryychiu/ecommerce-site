@@ -1,4 +1,9 @@
 .list-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-header__title {
   color: black;
   font-weight: bold;
   padding-top: $m-size;
