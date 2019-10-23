@@ -27,9 +27,11 @@ class CheckoutSummary extends React.Component {
     };
   };
   componentDidUpdate() {
-    if (this.state.shippingMethod == 'pickup' && this.state.total !== this.props.itemsSubtotal - this.props.itemsDiscount) {
+    if (this.state.shippingMethod == 'ship' && this.props.itemsSubtotal == 0) {
+      this.setState({ total: 0, shippingMethod: 'pickup' });
+    } else if (this.state.shippingMethod == 'pickup' && this.state.total !== this.props.itemsSubtotal - this.props.itemsDiscount) {
       this.setState({ total: this.props.itemsSubtotal - this.props.itemsDiscount })
-    } else if (this.state.shippingMethod == 'ship' && this.state.total !== this.props.itemsSubtotal - this.props.itemsDiscount + this.state.shippingPrice){
+    } else if (this.state.shippingMethod == 'ship' && this.state.total !== this.props.itemsSubtotal - this.props.itemsDiscount + this.state.shippingPrice) {
       this.setState({ total: this.props.itemsSubtotal - this.props.itemsDiscount + this.state.shippingPrice })
     }
   }
