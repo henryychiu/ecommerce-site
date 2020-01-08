@@ -49,6 +49,7 @@ class ProductPage extends React.Component {
           <div className="product-body">
             <p className="product-title">{this.props.product.name}</p>
             <p className="product-subtitle">{numeral(this.props.product.price / 100).format('$0,0.00')}</p>
+            <p className="product-subtitle">{this.props.product.note}</p>
             <button className="button" onClick={this.onAddItem}>ADD TO MY CART</button>
           </div>
         </div>
