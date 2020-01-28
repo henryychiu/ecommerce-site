@@ -108,12 +108,6 @@ const productsReducerState = [
     note: ''
   },
   {
-    name: '2011 Yearbook',
-    price: 2000,
-    images: ['/images/11yearbook.jpg', '/images/11yearbook2.jpg', '/images/11yearbook3.jpg'],
-    note: 'Only 1 left'
-  },
-  {
     name: '2013 Yearbook',
     price: 2000,
     images: ['/images/13yearbook.jpg', '/images/13yearbook2.jpg', '/images/13yearbook3.jpg'],

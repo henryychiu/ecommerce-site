@@ -2,3 +2,5 @@ node_modules/
 public/dist/
 .env.production
 .env.sandbox
+public/.DS_Store
+public/images/.DS_Store
