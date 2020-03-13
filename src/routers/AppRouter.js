@@ -8,11 +8,13 @@ import AboutPage from '../components/AboutPage';
 import DonatePage from '../components/DonatePage';
 import CheckoutPage from '../components/CheckoutPage';
 import NotFoundPage from '../components/NotFoundPage';
+import HeaderMessage from '../components/HeaderMessage';
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
-      <Header/>
+      <Header />
+      <HeaderMessage/>
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/shop" component={ShopPage} exact={true} />

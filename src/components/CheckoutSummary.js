@@ -93,7 +93,7 @@ class CheckoutSummary extends React.Component {
           </div>
           <div className="summary__row">
             <div />
-            <PaypalButton
+            {/* <PaypalButton
               client={CLIENT}
               env={ENV}
               currency={'USD'}
@@ -108,7 +108,10 @@ class CheckoutSummary extends React.Component {
                 label: 'paypal'
               }}
               shipping={this.state.shippingMethod === 'pickup' ? 1 : 2}
-            />
+            /> */}
+            <div className="summary__alert">
+              ALERT: NO ONLINE PURCHASES FOR THE TIME BEING.
+            </div>
             <div />
           </div>
         </div>
