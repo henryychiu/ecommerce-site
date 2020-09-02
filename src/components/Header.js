@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="content-container">
         <div className="header__content">
           <Link className="header__title" to="/">
-            JLHS VINTAGE YEARBOOKS
+            JAMES LOGAN YEARBOOKS
           </Link>
           <div className="header__links">
             <NavLink to="/shop" title="SHOP" className="header__link" activeClassName="header__link header__link--active">

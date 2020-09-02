@@ -64,7 +64,7 @@
 }
 
 .header-message {
-  background: black;
+  background: $grey-white;
 }
 
 .header-message__content {
@@ -73,8 +73,9 @@
 }
 
 .header-message__title {
-  color: white;
+  color: black;
   font-weight: 400;
   letter-spacing: .2rem;
   margin: 0;
+  padding: $xs-size 0;
 }
