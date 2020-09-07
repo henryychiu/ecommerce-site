@@ -1,6 +1,6 @@
 # James Logan High School Yearbook Store
+An online store for buying James Logan High school yearbooks  
 https://jlhs-yearbooks.herokuapp.com  
-An online store for buying James Logan High school yearbooks
 
 ## Preview
 
