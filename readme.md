@@ -1,6 +1,7 @@
 # James Logan High School Yearbook Store
 An online store for buying James Logan High school yearbooks  
 https://jlhs-yearbooks.herokuapp.com  
+</br>
 <img width="640" alt="jlhs-yearbooks" src="https://user-images.githubusercontent.com/46303723/92562798-6332a380-f22b-11ea-8960-d7a1b9e92696.png">
 
 ## Preview
